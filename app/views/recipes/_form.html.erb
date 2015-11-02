@@ -1,0 +1,38 @@
+<%= form_for @recipe do |f| %>
+<div class='mfleft'><%= f.label :name, "Recipe Name:" %></div>
+<div class='mfright'><%= f.text_field :name, size: 70 %></div>
+<br>
+<br>
+<div class='mfleft'><%= f.label :category_id, "Category:" %></div>
+<div class='mfright'><%= f.select :category_id, Category.all.map { |c| [c.name, c.id] } %></div>
+<br>
+<br>
+<div class='mfleft'><%= f.label :vegetarian, "Vegetarian:" %></div>
+<div class='mfright'><%= f.check_box :vegetarian %></div>
+<br>
+<br>
+
+<div class='mfleft'><%= f.label :ingredient_ids, "Ingredients:" %></div>
+<div class='mfright'><%= f.collection_check_boxes :ingredient_ids, Ingredient.all.order(:name), :id, :name %></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class='mfleft'><%= f.label :instructions, "Instructions:" %></div>
+<div class='mfright'><%= f.text_area :instructions, size: "70x10" %></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class='submitform'>
+  <%= f.submit button_text, class: "button" %>
+</div>
+</center>
+<% end %>

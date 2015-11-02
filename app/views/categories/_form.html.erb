@@ -1,0 +1,9 @@
+<%= form_for @category do |f| %>
+<%= f.label :name, "Category Name:", class: "formleft" %>
+<%= f.text_field :name, class: "formright" %>
+
+<div class='submitform'>
+  <%= f.submit button_text, class: "button" %>
+</div>
+
+<% end %>

@@ -1,0 +1,11 @@
+<%= form_for @ingredient do |f| %>
+<%= f.label :name, "Ingredient Name:", class: "formleft" %>
+<%= f.text_field :name, class: "formright" %>
+<br>
+<br>
+<center>
+<div class='submitform'>
+  <%= f.submit button_text, class: "button" %>
+</div>
+</center>
+<% end %>

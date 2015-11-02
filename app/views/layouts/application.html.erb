@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CookbookAppHw</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<div class='header-cont'>
+<header>
+  <center>
+    <img alt="CookBook App" src="http://i.imgur.com/aI0GGRW.png" />
+    <%= render partial: "layouts/menu" %>
+  </center>
+  <br>
+</header>
+</div>
+<br>
+<body>
+  <div class='wrap'>
+    <%= yield %>
+  </div>
+</body>
+</html>
