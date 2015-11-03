@@ -1,238 +1,73 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
-  width: 100%;
-  background:url(http://i.imgur.com/o9V5qby.jpg) top right no-repeat; background-attachment:fixed;
-  color: #FFFFFF;
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
 
-.wrap {
-  width: 960px;
-  margin: 120px auto 0 auto;
-  text-align: left;
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
 
-.header-cont {
-  width:100%;
-  position:fixed;
-  top:0px;
-}
-
-header {
-  padding-top: 10px;
-  margin: 0 auto;
-  color: #FFFFFF;
-  background:url(http://i.imgur.com/o9V5qby.jpg) top right no-repeat; background-attachment:fixed;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  display: inline;
-  border: 1px #FFFFFF solid;
-  padding: 5px;
-}
-
-li:hover {
-  border: 2px #FFD100 solid;
-  color: #FFD100;
-  text-decoration: underline;
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
 }
 
 a {
-  color: #FFFFFF;
-  text-decoration: none;
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
 }
 
-a:hover {
-  color: #FFD100;
-  text-decoration: underline;
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
 }
 
-form {
-  display: inline-block;
+#notice {
+  color: green;
 }
 
-.recipeleft {
-  padding-left: 300px;
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
 }
 
-.recipemain {
-  padding-left: 200px;
-  padding-right: 200px;
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
 }
-
-.mfleft {
-  padding-left: 200px;
-  width: 150px;
-  float: left;
-}
-
-.mfright {
-  width: 500px;
-  float: right;
-  padding-left: 10px;
-}
-
-.formleft {
-  padding-left: 200px;
-  width: 150px;
-  float: left;
-}
-
-.formright {
-  width: 300px;
-}
-
-.fcbright {
-  width: 300px;
-  float: right;
-}
-
-.ingredientlist {
-
-}
-
-.imgdelbut {
-  background: url(http://i.imgur.com/a6rCt68.png);
-  background-size: 15px;
-  background-position: 0px 13px;
-  padding: 15px;
-  background-repeat: no-repeat;
-  border: none;
-}
-
-.headleft {
-  width: 200px;
-  float: left;
-}
-
-.headright {
-  width: 200px;
-  float: right;
-}
-
-.submitform {
-  padding-top:20px;
-  width: 960px;
-}
-
-footer {
-  padding-top: 10px;
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:url(http://i.imgur.com/o9V5qby.jpg) top right no-repeat; background-attachment:fixed;
-}
-
-/*
-* http://www.bypeople.com/one-tag-ios-like-css-buttons/
-* button/button.back by RickMartinez - March 9th 2015
-*/
-.button {
-  display: inline-block;
-  position: relative;
-  color: #888;
-  text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
-  text-decoration: none;
-  text-align: center;
-  padding: 4px 6px;
-  font-size: 10px;
-  font-weight: 700;
-  font-family: helvetica, arial, sans-serif;
-  border-radius: 4px;
-  border: 1px solid #bcbcbc;
-
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
-  background-image: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(239,239,239,1) 60%,rgba(225,223,226,1) 100%);
-}
-
-.button:hover {
-  color: #555;
-}
-
-.button:active,.button:active:after,.button:active:before {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.button.back {
-  border-left: none;
-}
-
-.button.back:after {
-  content: ' ';
-  position: absolute;
-  height: 50%;
-  width: 15px;
-  border-left: 1px solid #bcbcbc;
-
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 1%,rgba(240,240,240,1) 100%);
-  left: -5px;
-  top: 1px;
-
-  -webkit-transform: skew(-35deg, 0);
-  -moz-transform: skew(-35deg, 0);
-  -o-transform: skew(-35deg, 0);
-  -ms-transform: skew(-35deg, 0);
-  transform: skew(-35deg, 0);
-}
-
-.button.back:before {
-  content: ' ';
-  position: absolute;
-  height: 48%;
-  width: 15px;
-  border-left: 1px solid #bcbcbc;
-  bottom: 1px;
-  left: -5px;
-
-  -webkit-transform: skew(35deg, 0);
-  -moz-transform: skew(35deg, 0);
-  -o-transform: skew(35deg, 0);
-  -ms-transform: skew(35deg, 0);
-  transform: skew(35deg, 0);
-
-  background-image: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
-  background-image: -moz-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
-  background-image: -o-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
-  background-image: -ms-linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
-  background-image: linear-gradient(top, rgba(240,240,240,1) 0%,rgba(239,239,239,1) 10%,rgba(225,223,226,1) 100%);
-
-  -webkit-box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
-  box-shadow: -2px 1px 2px rgba(100,100,100,0.1);
-}
-
-
-
-
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
